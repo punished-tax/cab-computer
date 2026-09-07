@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react";
+import Link from 'next/link'
 
 // ---- Design tokens ----
 // bg:      #0b0e0f  near-black, slightly warm (not pure #000)
@@ -38,9 +39,9 @@ export default function TerminalHome() {
   const typed = useTypewriter(TAGLINE);
 
   const navItems = [
-    { label: "projects", href: "#projects" },
-    { label: "blog", href: "#blog" },
-    { label: "about", href: "#about" },
+    { label: "projects", href: "/projects" },
+    { label: "blog", href: "/blog" },
+    { label: "about", href: "/about" },
   ];
 
   return (
@@ -100,9 +101,7 @@ export default function TerminalHome() {
               _
             </span>
 
-            <p>
-              I'm a software developer who's interested in backend technologies. 
-            </p>
+            
 
           </p>
 
