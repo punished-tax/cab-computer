@@ -1,5 +1,5 @@
 ---
-title: "building-pyassistant.md"
+title: "building pyassistant"
 date: "2026-03-30"
 category: "projects"
 tags: ["python", "ai", "automation"]

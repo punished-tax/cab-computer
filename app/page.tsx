@@ -104,117 +104,118 @@ export default function TerminalHome() {
             
 
           </p>
-
-
-
-
-
-                {/* ascii art placeholder */}
-        <div className="mb-8 flex justify-end">
-          <pre
-            className="text-xs sm:text-sm rounded-sm w-full sm:w-1/2 "
-            style={{
-              //border: "1px #2f3739",
-              color: "#8a9694",
-              //background: "#0e1213",
-              padding: "0rem",
-              margin: 0, //-100?
-              whiteSpace: "pre",
-              lineHeight: 1,
-              letterSpacing: "normal",
-              fontVariantLigatures: "none",
-              fontFamily: "'IBM Plex Mono', monospace",
-            }}
-          >
-{`                                                                              
-                               :@                                             
-                               :@@@@:                                         
-                            ::@@@@@@@@*:@@-::                                 
-                            :@@@:@@@@@@@@::@@@@::                             
-                             :@+:=@@@@@@@@@:::@@@@:                           
-                            ::*@@@@@@@@@@@@@@@-:@@@@:                         
-                          =@@@@@@@@@@@@@@@@@@@@@%:@@@@:                       
-                         :@@+@@@@@@@@@@@@@@@@@@@@@-:@@@:                      
-                         :@@@@@@@@@@@@@@@@@@@@@@@@@@:@@@-                     
-                       :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:@@@:                    
-                      :@@@@@@*+++@@@@@@@@@@@@@@@@@@@@@:@@@:                   
-                     -@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:@@@:                  
-                   :@@@@@@@@@@@@@@@@@@+@@@@@@@@@@@@@@@@@#@@:                  
-                  :@@@@@@@@@@@@@@@@%+@@@@@@@@@@@@@@@@@@@-@@@:                 
-                 :@@@@@@@@++++++%@@@@ @@@@@@@@@@@@@@@@@@@@@@:                 
-                 :@@@@@@+@@           @@@@+@@@@@@@@@@@@@@@@@:                 
-                  -@@@*@@            @@@*+@@@@@@@@@@@@@@@@@@:                 
-                    -@@@            @@@+@@@@@@@@@@@@@@@@@@@@:                 
-                                  @@@++@@@@@@@@@@@@@@@@@@@@@                  
-                                 @@++@@@@@@@@@@@@@@@@@@@@@@:                  
-                               @@++@@@@@@@@@@@@@@@@@@@@@@@@:                  
-                             @@*+@@@@@@@@@@@@@@@@@@@@@@@@@-                   
-                            @@+@@@@@@@@@@@@@@@@@@@@@@@@@@@                    
-                          @@%+@@@@@@@@@@@@@@@@@@@@@@@@@@@:                    
-                         @@%+@@@@@@@@@@@@@@@@@@@@@@@@@@@@                     
-                        @@@+@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      
-                        @@++@@@@@@@@@@@@@@@@@@@@@@@@@@@+                      
-                       @@@+%@@@@@@@@@@@@@@@@@@@@@@@@@@@                       
-                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       
-                     @@++++++@@@@@@@@@@@@@@@+++++++++++@:                     
-                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:                     
-                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:                     
-                        @@+@@@@@@@@@@@@@@@@@@@@@@@@@::                        
-                        @@++@@@@@@@@@@@@@@@@@@@@@@@@::                        
-                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*:                       
-                    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@::                    
-                   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-:                  
-                @@@=========*****************+=============@@:                
-                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:                
-                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:                
-                                                                              
-`}
-          </pre>
-        </div>  
-
-
-        {/* command-style teaser links into the rest of the site */}
-        <div className="space-y-4 text-sm">
-
-                    <div>
-            <span style={{ color: "#74827f" }}> </span>
-            <span style={{ color: "#d7dbdb" }}> </span>
-            <a style={{ color: "#af3b18" }}>
-              Featured projects:
-            </a>
-
-          </div>
-          <div>
-            <span style={{ color: "#74827f" }}>$ </span>
-            <span style={{ color: "#d7dbdb" }}> </span>
-            <a href="#projects" className="term-link" style={{ color: "#e8a33d" }}>
-              pyassistant
-            </a>
-            <p className="pl-4 mt-1" style={{ color: "#74827f" }}>
-              # Daily python challenges alongside an AI assistant for small hints
-            </p>
-          </div>
-          <div>
-            <span style={{ color: "#74827f" }}>$ </span>
-            <span style={{ color: "#d7dbdb" }}> </span>
-            <a href="#blog" className="term-link" style={{ color: "#e8a33d" }}>
-              proj name
-            </a>
-            <p className="pl-4 mt-1" style={{ color: "#74827f" }}>
-              # description for proj
-            </p>
-          </div>
-          <div>
-            <span style={{ color: "#74827f" }}>$ </span>
-            <span style={{ color: "#d7dbdb" }}> </span>
-            <a href="#about" className="term-link" style={{ color: "#e8a33d" }}>
-              TCP/UDP benchmark chatroom 
-            </a>
-            <p className="pl-4 mt-1" style={{ color: "#74827f" }}>
-              # who I am, briefly
-            </p>
-          </div>
         </div>
+
+        {/* content row: text (left) + ascii art (right, own column so it can't overlap text) */}
+        <div className="flex flex-col lg:flex-row lg:items-start gap-8">
+          <div className="flex-1 min-w-0">
+
+            {/* command-style teaser links into the rest of the site */}
+            <div className="space-y-4 text-sm">
+
+              <div>
+                <span style={{ color: "#74827f" }}> </span>
+                <span style={{ color: "#d7dbdb" }}> </span>
+                <a style={{ color: "#af3b18" }}>
+                  Featured projects:
+                </a>
+
+              </div>
+              <div>
+                <span style={{ color: "#74827f" }}>$ </span>
+                <span style={{ color: "#d7dbdb" }}> </span>
+                <a href="#projects" className="term-link" style={{ color: "#e8a33d" }}>
+                  pyassistant
+                </a>
+                <p className="pl-4 mt-1" style={{ color: "#74827f" }}>
+                  Daily python challenges alongside an AI assistant for small hints
+                </p>
+              </div>
+              <div>
+                <span style={{ color: "#74827f" }}>$ </span>
+                <span style={{ color: "#d7dbdb" }}> </span>
+                <a href="#blog" className="term-link" style={{ color: "#e8a33d" }}>
+                  TCP/UDP benchmark tool
+                </a>
+                <p className="pl-4 mt-1" style={{ color: "#74827f" }}>
+                  a local, multi-client chatroom where a user could send a set number of packets using either TCP or UDP to measure packet loss and time to arrival.
+                </p>
+              </div>
+              <div>
+                <span style={{ color: "#74827f" }}>$ </span>
+                <span style={{ color: "#d7dbdb" }}> </span>
+                <a href="#about" className="term-link" style={{ color: "#e8a33d" }}>
+                  Proj name
+                </a>
+                <p className="pl-4 mt-1" style={{ color: "#74827f" }}>
+                  desc of proj
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* ascii art placeholder */}
+          <div className="flex justify-center lg:justify-end shrink-0">
+            <pre
+              className="text-xs sm:text-sm rounded-sm w-full sm:w-1/2 lg:w-auto"
+              style={{
+                //border: "1px #2f3739",
+                color: "#8a9694",
+                //background: "#0e1213",
+                padding: "0rem",
+                margin: 0, //-100?
+                whiteSpace: "pre",
+                lineHeight: 1,
+                letterSpacing: "normal",
+                fontVariantLigatures: "none",
+                fontFamily: "'IBM Plex Mono', monospace",
+              }}
+            >
+{`
+                               :@
+                               :@@@@:
+                            ::@@@@@@@@*:@@-::
+                            :@@@:@@@@@@@@::@@@@::
+                             :@+:=@@@@@@@@@:::@@@@:
+                            ::*@@@@@@@@@@@@@@@-:@@@@:
+                          =@@@@@@@@@@@@@@@@@@@@@%:@@@@:
+                         :@@+@@@@@@@@@@@@@@@@@@@@@-:@@@:
+                         :@@@@@@@@@@@@@@@@@@@@@@@@@@:@@@-
+                       :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:@@@:
+                      :@@@@@@*+++@@@@@@@@@@@@@@@@@@@@@:@@@:
+                     -@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:@@@:
+                   :@@@@@@@@@@@@@@@@@@+@@@@@@@@@@@@@@@@@#@@:
+                  :@@@@@@@@@@@@@@@@%+@@@@@@@@@@@@@@@@@@@-@@@:
+                 :@@@@@@@@++++++%@@@@ @@@@@@@@@@@@@@@@@@@@@@:
+                 :@@@@@@+@@           @@@@+@@@@@@@@@@@@@@@@@:
+                  -@@@*@@            @@@*+@@@@@@@@@@@@@@@@@@:
+                    -@@@            @@@+@@@@@@@@@@@@@@@@@@@@:
+                                  @@@++@@@@@@@@@@@@@@@@@@@@@
+                                 @@++@@@@@@@@@@@@@@@@@@@@@@:
+                               @@++@@@@@@@@@@@@@@@@@@@@@@@@:
+                             @@*+@@@@@@@@@@@@@@@@@@@@@@@@@-
+                            @@+@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                          @@%+@@@@@@@@@@@@@@@@@@@@@@@@@@@:
+                         @@%+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                        @@@+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                        @@++@@@@@@@@@@@@@@@@@@@@@@@@@@@+
+                       @@@+%@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                     @@++++++@@@@@@@@@@@@@@@+++++++++++@:
+                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:
+                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:
+                        @@+@@@@@@@@@@@@@@@@@@@@@@@@@::
+                        @@++@@@@@@@@@@@@@@@@@@@@@@@@::
+                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*:
+                    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@::
+                   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-:
+                @@@=========*****************+=============@@:
+                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:
+                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:
+
+`}
+            </pre>
+          </div>
         </div>
 
 

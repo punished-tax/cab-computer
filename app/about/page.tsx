@@ -6,20 +6,20 @@
 // mono: "IBM Plex Mono"
 
 const SKILLS = [
-  { group: "languages", items: ["Python", "Go", "TypeScript", "SQL"] },
-  { group: "backend", items: ["FastAPI", "PostgreSQL", "Redis", "Docker"] },
+  { group: "languages", items: ["TypeScript", "Python", "Java", "SQL" , "Bash", "Tailwind CSS"] },
+  { group: "backend", items: ["NextJS API Routes", "PostgreSQL", "Redis", "Docker"] },
   { group: "tools", items: ["Git", "Linux", "Nginx", "AWS"] },
 ];
 
 const LOG = [
-  { date: "2026", role: "Backend Developer", note: "building things that talk to other things" },
-  { date: "2024", role: "CS Degree", note: "learned what not to do first" },
-  { date: "2022", role: "Started coding", note: "hello world, and it stuck" },
+  { date: "October 2026", role: "Backend Developer", note: "building things that talk to other things" },
+  { date: "June 2026", role: "Bachelor's in CS", note: "American University of Kuwait" },
+  { date: "January 2022", role: "Started coding", note: "hello world, and it stuck" },
 ];
 
 const LINKS = [
-  { label: "github", value: "github.com/yourname" },
-  { label: "email", value: "mailto:you@example.com" },
+  { label: "github", value: "github.com/punished-tax" },
+  { label: "email", value: "asharhan2001@gmail.com" },
   { label: "linkedin", value: "linkedin.com/in/yourname" },
 ];
 
@@ -72,17 +72,16 @@ export default function TerminalAbout() {
           style={{ color: "#d7dbdb", lineHeight: 1.7, maxWidth: "42rem" }}
         >
           <p>
-            <span style={{ color: "#5f9ea0" }}>#</span> I'm Ahmad — a backend-leaning developer
-            who likes small, focused tools over big frameworks.
+            <span style={{ color: "#5f9ea0" }}>#</span> I'm Ahmad, a backend-leaning developer
+            focusing on Typescript and NextJS, as well as flexible knowledge in Python and Java.
+            I also have an interest in bash scripting, cloud computing and networking concepts.
           </p>
           <p className="mt-3">
-            <span style={{ color: "#5f9ea0" }}>#</span> Most of what I build starts as a script
-            to solve something annoying, and occasionally survives long enough to become a
-            real project.
+            <span style={{ color: "#5f9ea0" }}></span> Most of what I build starts in me finding two or more concepts that I try and 
+            merge together to solve a specific problem, or combining unlikely pairs just to see what happens.
           </p>
           <p className="mt-3">
-            <span style={{ color: "#5f9ea0" }}>#</span> Outside of code: reading, terminals I
-            didn't need to customize but did anyway, and coffee.
+            <span style={{ color: "#5f9ea0" }}>#</span> Outside of code: PC building, coffee making, and chess
           </p>
         </div>
 
