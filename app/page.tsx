@@ -15,11 +15,11 @@ import Link from 'next/link'
 
 const TAGLINE = "and I talk about them. Or anything that comes to mind.";
 
-function useTypewriter(text, speed = 32, startDelay = 400) {
+function useTypewriter(text: string, speed = 32, startDelay = 400) {
   const [out, setOut] = useState("");
   useEffect(() => {
     let i = 0;
-    let interval;
+    let interval: ReturnType<typeof setInterval>;
     const timeout = setTimeout(() => {
       interval = setInterval(() => {
         i += 1;
