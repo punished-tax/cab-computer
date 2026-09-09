@@ -13,7 +13,7 @@ import Link from 'next/link'
 // accent2: #5f9ea0  cool teal — visited/secondary accent
 // mono:    "IBM Plex Mono" everywhere (single family, terminal genre justifies it)
 
-const TAGLINE = "and I talk about them. Or anything that comes to mind.";
+const TAGLINE = "";
 
 function useTypewriter(text: string, speed = 32, startDelay = 400) {
   const [out, setOut] = useState("");

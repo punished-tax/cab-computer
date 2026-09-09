@@ -1,8 +1,8 @@
 ---
-title: "i peaked at 1200 elo and i'm at peace with it"
+title: "I reached 1200 elo. I want more."
 date: "2026-09-02"
 tags: ["chess", "fluff"]
-excerpt: "A short love letter to being mediocre at chess on purpose."
+excerpt: "Having more is never enough, and maybe that's the point."
 ---
 
 ## the plateau

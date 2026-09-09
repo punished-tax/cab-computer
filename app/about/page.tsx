@@ -75,23 +75,23 @@ export default function TerminalAbout() {
         >
           <p>
             <span style={{ color: "#5f9ea0" }}>#</span> I'm Ahmad, a backend-leaning developer
-            focusing on Typescript and NextJS, as well as flexible knowledge in Python and Java.
-            I also have an interest in bash scripting, cloud computing and networking concepts.
+            focusing on Typescript and NextJS. I also have flexible knowledge in Python and Java. Additionally, I'm interested in
+             bash scripting, cloud computing and networking concepts.
           </p>
           <p className="mt-3">
-            <span style={{ color: "#5f9ea0" }}></span> Most of what I build starts in me finding two or more concepts that I try and 
+            <span style={{ color: "#5f9ea0" }}></span> Most of what I build starts with me finding two or more concepts that I try to 
             merge together to solve a specific problem, or combining unlikely pairs just to see what happens.
           </p>
           <p className="mt-3">
-            <span style={{ color: "#5f9ea0" }}>#</span> Outside of code: PC building, coffee making, and chess
+            <span style={{ color: "#5f9ea0" }}>#</span> Outside of code: PC building, coffee brewing, and chess
             
           </p>
 
           <p className="mt-3">
-            <span style={{ color: "#5f9ea0" }}>#</span> Favorite chess openings:
+            <span style={{ color: "#5f9ea0" }}>#</span> Favorite openings:
           </p>
           <p className="pl-4 mt-1">
-            <span style={{ color: "#74827f" }}>white:</span> ruy lopez
+            <span style={{ color: "#74827f" }}>white:</span> ruy lopez: a6 variation
           </p>
           <p className="pl-4">
             <span style={{ color: "#74827f" }}>black:</span> hyperaccelerated dragon
