@@ -1,9 +1,11 @@
 ---
-title: "building pyassistant"
+title: "pyassistant"
 date: "2026-03-30"
-category: "projects"
-tags: ["python", "ai", "automation"]
-excerpt: "A daily Python challenge generator with an AI assistant that gives hints instead of answers. Notes on keeping the assistant from just solving the problem for you."
+stack: ["Python", "OpenAI API", "Pydantic", "SQLite"]
+excerpt: "Daily python challenges alongside an AI assistant for small hints"
+github: ""
+demo: ""
+screenshots: []
 ---
 
 ## the idea

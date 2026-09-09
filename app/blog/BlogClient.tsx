@@ -11,21 +11,16 @@ import type { PostMeta } from "@/lib/posts";
 
 type Props = {
   posts: PostMeta[];
-  categories: string[];
   tags: string[];
-  initialCategory?: string | null;
   initialTag?: string | null;
 };
 
 export default function BlogClient({
   posts,
-  categories,
   tags,
-  initialCategory = null,
   initialTag = null,
 }: Props) {
   const [query, setQuery] = useState("");
-  const [activeCategory, setActiveCategory] = useState<string | null>(initialCategory);
   const [activeTags, setActiveTags] = useState<string[]>(initialTag ? [initialTag] : []);
 
   const navItems = [
@@ -48,23 +43,19 @@ export default function BlogClient({
         post.title.toLowerCase().includes(q) ||
         post.excerpt.toLowerCase().includes(q) ||
         post.body.toLowerCase().includes(q) ||
-        post.tags.some((t) => t.toLowerCase().includes(q)) ||
-        post.category.toLowerCase().includes(q);
-
-      const matchesCategory = !activeCategory || post.category === activeCategory;
+        post.tags.some((t) => t.toLowerCase().includes(q));
 
       const matchesTags =
         activeTags.length === 0 || activeTags.every((t) => post.tags.includes(t));
 
-      return matchesQuery && matchesCategory && matchesTags;
+      return matchesQuery && matchesTags;
     });
-  }, [posts, query, activeCategory, activeTags]);
+  }, [posts, query, activeTags]);
 
-  const hasActiveFilters = query !== "" || activeCategory !== null || activeTags.length > 0;
+  const hasActiveFilters = query !== "" || activeTags.length > 0;
 
   const clearFilters = () => {
     setQuery("");
-    setActiveCategory(null);
     setActiveTags([]);
   };
 
@@ -142,40 +133,6 @@ export default function BlogClient({
               </button>
             )}
           </div>
-        </div>
-
-        {/* category filter */}
-        <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm">
-          <span style={{ color: "#74827f" }}>category:</span>
-          <button
-            onClick={() => setActiveCategory(null)}
-            className="chip"
-            style={{
-              color: activeCategory === null ? "#e8a33d" : "#74827f",
-              border: `1px solid ${activeCategory === null ? "#e8a33d" : "#232b2d"}`,
-              padding: "0.1rem 0.5rem",
-              borderRadius: "2px",
-              background: "transparent",
-            }}
-          >
-            all
-          </button>
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(activeCategory === cat ? null : cat)}
-              className="chip"
-              style={{
-                color: activeCategory === cat ? "#e8a33d" : "#74827f",
-                border: `1px solid ${activeCategory === cat ? "#e8a33d" : "#232b2d"}`,
-                padding: "0.1rem 0.5rem",
-                borderRadius: "2px",
-                background: "transparent",
-              }}
-            >
-              {cat}
-            </button>
-          ))}
         </div>
 
         {/* tag filter */}

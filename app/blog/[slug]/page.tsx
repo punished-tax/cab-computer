@@ -121,13 +121,6 @@ export default async function BlogPostPage({
             <span>·</span>
             <span>{post.readTime} read</span>
             <span>·</span>
-            <Link
-              href={`/blog?category=${encodeURIComponent(post.category)}`}
-              className="term-link"
-              style={{ color: "#e8a33d" }}
-            >
-              {post.category}
-            </Link>
             <span className="w-full sm:w-auto flex flex-wrap gap-x-2">
               {post.tags.map((t) => (
                 <Link

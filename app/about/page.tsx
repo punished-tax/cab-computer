@@ -14,13 +14,13 @@ const SKILLS = [
 const LOG = [
   { date: "October 2026", role: "Backend Developer", note: "building things that talk to other things" },
   { date: "June 2026", role: "Bachelor's in CS", note: "American University of Kuwait" },
-  { date: "January 2022", role: "Started coding", note: "hello world, and it stuck" },
+  
 ];
 
 const LINKS = [
-  { label: "github", value: "github.com/punished-tax" },
+  { label: "github", value: "github.com/punished-tax", href: "https://github.com/punished-tax" },
   { label: "email", value: "asharhan2001@gmail.com" },
-  { label: "linkedin", value: "linkedin.com/in/yourname" },
+  { label: "linkedin", value: "linkedin.com/in/yourname", href: "https://linkedin.com/in/yourname" },
 ];
 
 export default function TerminalAbout() {
@@ -47,7 +47,9 @@ export default function TerminalAbout() {
           className="pb-4 mb-10 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm"
           style={{ borderBottom: "1px solid #232b2d", color: "#d7dbdb" }}
         >
-          <span style={{ color: "#e8a33d" }}>home</span>
+          <a href="/" className="term-link" style={{ color: "#e8a33d" }}>
+            home
+          </a>
           <span style={{ color: "#74827f" }}>:</span>
           {navItems.map((item) => (
             <a
@@ -82,7 +84,19 @@ export default function TerminalAbout() {
           </p>
           <p className="mt-3">
             <span style={{ color: "#5f9ea0" }}>#</span> Outside of code: PC building, coffee making, and chess
+            
           </p>
+
+          <p className="mt-3">
+            <span style={{ color: "#5f9ea0" }}>#</span> Favorite chess openings:
+          </p>
+          <p className="pl-4 mt-1">
+            <span style={{ color: "#74827f" }}>white:</span> ruy lopez
+          </p>
+          <p className="pl-4">
+            <span style={{ color: "#74827f" }}>black:</span> hyperaccelerated dragon
+          </p>
+
         </div>
 
         {/* skills */}
@@ -130,9 +144,13 @@ export default function TerminalAbout() {
             <div key={link.label} className="text-sm sm:text-base">
               <span style={{ color: "#d7dbdb" }}>{link.label}</span>
               <span style={{ color: "#74827f" }}> -&gt; </span>
-              <a href={link.value} className="term-link" style={{ color: "#e8a33d" }}>
-                {link.value}
-              </a>
+              {link.href ? (
+                <a href={link.href} className="term-link" style={{ color: "#e8a33d" }}>
+                  {link.value}
+                </a>
+              ) : (
+                <span style={{ color: "#e8a33d" }}>{link.value}</span>
+              )}
             </div>
           ))}
         </div>

@@ -124,7 +124,7 @@ export default function TerminalHome() {
               <div>
                 <span style={{ color: "#74827f" }}>$ </span>
                 <span style={{ color: "#d7dbdb" }}> </span>
-                <a href="#projects" className="term-link" style={{ color: "#e8a33d" }}>
+                <a href="/projects/pyassistant" className="term-link" style={{ color: "#e8a33d" }}>
                   pyassistant
                 </a>
                 <p className="pl-4 mt-1" style={{ color: "#74827f" }}>
@@ -134,7 +134,7 @@ export default function TerminalHome() {
               <div>
                 <span style={{ color: "#74827f" }}>$ </span>
                 <span style={{ color: "#d7dbdb" }}> </span>
-                <a href="#blog" className="term-link" style={{ color: "#e8a33d" }}>
+                <a href="/projects/tcp-udp-benchmark-tool" className="term-link" style={{ color: "#e8a33d" }}>
                   TCP/UDP benchmark tool
                 </a>
                 <p className="pl-4 mt-1" style={{ color: "#74827f" }}>
@@ -144,12 +144,17 @@ export default function TerminalHome() {
               <div>
                 <span style={{ color: "#74827f" }}>$ </span>
                 <span style={{ color: "#d7dbdb" }}> </span>
-                <a href="#about" className="term-link" style={{ color: "#e8a33d" }}>
-                  Proj name
+                <a href="/projects/chess-stats-scraper" className="term-link" style={{ color: "#e8a33d" }}>
+                  Custom scraper for chess.com stats
                 </a>
                 <p className="pl-4 mt-1" style={{ color: "#74827f" }}>
-                  desc of proj
+                  Scraper for stats and game fetching
                 </p>
+              </div>
+              <div className="pt-1">
+                <a href="/projects" className="term-link text-sm" style={{ color: "#5f9ea0" }}>
+                  → see all projects
+                </a>
               </div>
             </div>
           </div>
