@@ -1,7 +1,6 @@
 ---
 title: "I reached 1200 elo. I want more."
 date: "2026-09-02"
-tags: ["chess", "fluff"]
 excerpt: "Having more is never enough, and maybe that's the point."
 ---
 

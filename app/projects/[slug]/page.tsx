@@ -51,15 +51,15 @@ export default async function ProjectPage({
         .spec-terminal { color: #b7bdbd; line-height: 1.6; }
         .spec-terminal h1, .spec-terminal h2, .spec-terminal h3 {
           color: #5f9ea0; margin-top: 1.75em; margin-bottom: 0.6em; line-height: 1.3;
-          font-size: 0.78rem; text-transform: lowercase; letter-spacing: 0.02em;
+          font-size: 1rem; text-transform: lowercase; letter-spacing: 0.02em;
           padding-bottom: 0.4em; border-bottom: 1px solid #1a2021;
         }
         .spec-terminal h2::before, .spec-terminal h3::before { content: "$ "; color: #3a4344; }
         .spec-terminal h1:first-child, .spec-terminal h2:first-child { margin-top: 0; }
-        .spec-terminal p { margin: 0.75em 0; font-size: 0.85rem; }
+        .spec-terminal p { margin: 0.75em 0; font-size: 1.20rem; }
         .spec-terminal a { color: #5f9ea0; text-decoration: none; border-bottom: 1px solid #2f3739; }
         .spec-terminal a:hover { border-bottom-color: #5f9ea0; }
-        .spec-terminal ul, .spec-terminal ol { margin: 0.75em 0; padding-left: 1.25em; font-size: 0.85rem; }
+        .spec-terminal ul, .spec-terminal ol { margin: 0.75em 0; padding-left: 1.25em; font-size: 0.92rem; }
         .spec-terminal li { margin: 0.3em 0; }
         .spec-terminal li::marker { color: #5f9ea0; }
         .spec-terminal code {
@@ -109,14 +109,14 @@ export default async function ProjectPage({
         {/* breadcrumb */}
         <p className="text-sm mb-6" style={{ color: "#74827f" }}>
           <Link href="/projects" className="term-link" style={{ color: "#74827f" }}>
-            $ projects
+            
           </Link>{" "}
-          / cat {project.slug}.md
+          
         </p>
 
         {/* project meta */}
         <div className="mb-8">
-          <h1 className="text-lg sm:text-xl mb-4" style={{ color: "#d7dbdb" }}>
+          <h1 className="text-lg sm:text-2xl mb-4" style={{ color: "#d7dbdb" }}>
             {project.title}
           </h1>
 
@@ -160,7 +160,7 @@ export default async function ProjectPage({
         {/* screenshots */}
         <div className="mb-10">
           {project.screenshots.length > 0 ? (
-            <div className="grid sm:grid-cols-2 gap-3">
+            <div className="grid sm:grid-cols-1 gap-3">
               {project.screenshots.map((src, i) => (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
@@ -187,7 +187,7 @@ export default async function ProjectPage({
         {/* content */}
         <div
           className="spec-terminal rounded-sm"
-          style={{ border: "1px solid #232b2d", background: "#0e1213", padding: "1.25rem 1.5rem" }}
+          style={{background: "#0e1213", padding: "1.25rem 1.5rem" }}
           dangerouslySetInnerHTML={{ __html: contentHtml }}
         />
 

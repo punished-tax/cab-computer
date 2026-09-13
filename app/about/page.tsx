@@ -8,11 +8,11 @@
 const SKILLS = [
   { group: "languages", items: ["TypeScript", "Python", "Java", "SQL" , "Bash", "Tailwind CSS"] },
   { group: "backend", items: ["NextJS API Routes", "PostgreSQL", "Redis", "Docker"] },
-  { group: "tools", items: ["Git", "Linux", "Nginx", "AWS"] },
+  { group: "tools", items: ["Git", "Linux", "AWS"] },
 ];
 
 const LOG = [
-  { date: "October 2026", role: "Backend Developer", note: "building things that talk to other things" },
+  { date: "XXX 2026", role: "coming soon", note: "XXXXXXXXXXXXX" },
   { date: "June 2026", role: "Bachelor's in CS", note: "American University of Kuwait" },
   
 ];
@@ -74,8 +74,8 @@ export default function TerminalAbout() {
           style={{ color: "#d7dbdb", lineHeight: 1.7, maxWidth: "42rem" }}
         >
           <p>
-            <span style={{ color: "#5f9ea0" }}>#</span> I'm Ahmad, a backend-leaning developer
-            focusing on Typescript and NextJS. I also have flexible knowledge in Python and Java. Additionally, I'm interested in
+            <span style={{ color: "#5f9ea0" }}></span> I'm Ahmad, a backend-leaning developer
+            focusing on Typescript and NextJS. I also have flexible knowledge in Python and Java. Additionally, I'm actively learning about
              bash scripting, cloud computing and networking concepts.
           </p>
           <p className="mt-3">
@@ -83,12 +83,12 @@ export default function TerminalAbout() {
             merge together to solve a specific problem, or combining unlikely pairs just to see what happens.
           </p>
           <p className="mt-3">
-            <span style={{ color: "#5f9ea0" }}>#</span> Outside of code: PC building, coffee brewing, and chess
+            <span style={{ color: "#5f9ea0" }}></span> Outside of code: PC building, coffee brewing, and chess
             
           </p>
 
           <p className="mt-3">
-            <span style={{ color: "#5f9ea0" }}>#</span> Favorite openings:
+            <span style={{ color: "#5f9ea0" }}></span> Favorite openings:
           </p>
           <p className="pl-4 mt-1">
             <span style={{ color: "#74827f" }}>white:</span> ruy lopez: a6 variation

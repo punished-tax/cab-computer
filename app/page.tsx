@@ -128,7 +128,7 @@ export default function TerminalHome() {
                   pyassistant
                 </a>
                 <p className="pl-4 mt-1" style={{ color: "#74827f" }}>
-                  Daily python challenges alongside an AI assistant for small hints
+                  Leetcode-style daily python challenges alongside an AI assistant for small hints
                 </p>
               </div>
               <div>

@@ -10,7 +10,6 @@ export type PostMeta = {
   slug: string;
   title: string;
   date: string;
-  tags: string[];
   excerpt: string;
   readTime: string;
   body: string;
@@ -38,7 +37,6 @@ export function getAllPosts(): PostMeta[] {
       slug,
       title: (data.title as string) ?? slug,
       date: (data.date as string) ?? "",
-      tags: (data.tags as string[]) ?? [],
       excerpt: (data.excerpt as string) ?? "",
       readTime: (data.readTime as string) ?? readTimeFromContent(content),
       body: content,
@@ -51,10 +49,6 @@ export function getAllPosts(): PostMeta[] {
 
 export function getPostBySlug(slug: string): PostMeta | undefined {
   return getAllPosts().find((p) => p.slug === slug);
-}
-
-export function getAllTags(): string[] {
-  return Array.from(new Set(getAllPosts().flatMap((p) => p.tags))).sort();
 }
 
 export async function markdownToHtml(markdown: string): Promise<string> {

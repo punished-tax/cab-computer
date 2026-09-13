@@ -97,18 +97,12 @@ export default async function BlogPostPage({
           ))}
         </div>
 
-        {/* breadcrumb */}
-        <p className="text-sm mb-6" style={{ color: "#74827f" }}>
-          <Link href="/blog" className="term-link" style={{ color: "#74827f" }}>
-            $ blog
-          </Link>{" "}
-          / cat {post.slug}.md
-        </p>
+        
 
         {/* post meta */}
         <div className="mb-8">
           <h1
-            className="text-lg sm:text-xl mb-3"
+            className="text-lg sm:text-2xl mb-3"
             style={{ color: "#d7dbdb" }}
           >
             {post.title}
@@ -120,19 +114,6 @@ export default async function BlogPostPage({
             <span>{post.date}</span>
             <span>·</span>
             <span>{post.readTime} read</span>
-            <span>·</span>
-            <span className="w-full sm:w-auto flex flex-wrap gap-x-2">
-              {post.tags.map((t) => (
-                <Link
-                  key={t}
-                  href={`/blog?tag=${encodeURIComponent(t)}`}
-                  className="term-link"
-                  style={{ color: "#5f9ea0" }}
-                >
-                  #{t}
-                </Link>
-              ))}
-            </span>
           </div>
         </div>
 
