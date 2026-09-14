@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllProjects } from "@/lib/projects";
 
@@ -5,6 +6,10 @@ import { getAllProjects } from "@/lib/projects";
 // bg: #0b0e0f · surface: #121617 · border: #232b2d
 // text: #d7dbdb · muted: #74827f · accent: #e8a33d · accent2: #5f9ea0
 // mono: "IBM Plex Mono"
+
+export const metadata: Metadata = {
+  title: "Projects",
+};
 
 export default async function ProjectsPage() {
   const projects = getAllProjects();
