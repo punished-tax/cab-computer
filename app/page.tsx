@@ -138,7 +138,7 @@ export default function TerminalHome() {
                   TCP/UDP benchmark tool
                 </a>
                 <p className="pl-4 mt-1" style={{ color: "#74827f" }}>
-                  a local, multi-client chatroom where a user could send a set number of packets using either TCP or UDP to measure packet loss and time to arrival.
+                  a local, multi-client chatroom where a user could send a set number of packets using either TCP or UDP to measure packet loss and time to arrival
                 </p>
               </div>
               <div>
