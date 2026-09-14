@@ -74,9 +74,7 @@ export default function TerminalAbout() {
           style={{ color: "#d7dbdb", lineHeight: 1.7, maxWidth: "42rem" }}
         >
           <p>
-            <span style={{ color: "#5f9ea0" }}></span> I'm Ahmad, a backend-leaning developer
-            focusing on Typescript and NextJS. I also have flexible knowledge in Python and Java. Additionally, I'm actively learning about
-             bash scripting, cloud computing and networking concepts.
+            <span style={{ color: "#5f9ea0" }}></span> I'm Ahmad, a software developer focused on backend related technologies in the Typescript/NextJS ecosystem. I originally started programming in Java followed by Python, which became my most proficient language. Until recently, I've shifted my focus to the web and started thinking in systems rather than small programs. I'm currently learning more about linux and bash scripting, as well as cloud computing and networking concepts.
           </p>
           <p className="mt-3">
             <span style={{ color: "#5f9ea0" }}></span> Most of what I build starts with me finding two or more concepts that I try to 
