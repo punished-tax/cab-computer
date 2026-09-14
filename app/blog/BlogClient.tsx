@@ -91,8 +91,8 @@ export default function BlogClient({ posts }: Props) {
             className="flex items-center gap-2 px-3 py-2 rounded-sm text-sm"
             style={{ border: "1px solid #232b2d", background: "#121617" }}
           >
-            <span style={{ color: "#5f9ea0" }}>grep</span>
-            <span style={{ color: "#74827f" }}>-i</span>
+            <span style={{ color: "#5f9ea0" }}></span>
+            <span style={{ color: "#74827f" }}></span>
             <input
               type="text"
               value={query}

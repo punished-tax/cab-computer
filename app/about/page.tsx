@@ -20,7 +20,7 @@ const LOG = [
 const LINKS = [
   { label: "github", value: "github.com/punished-tax", href: "https://github.com/punished-tax" },
   { label: "email", value: "asharhan2001@gmail.com" },
-  { label: "linkedin", value: "linkedin.com/in/yourname", href: "https://linkedin.com/in/yourname" },
+  { label: "linkedin", value: "linkedin.com/in/ahmad-al-sharhan", href: "https://linkedin.com/in/ahmad-al-sharhan" },
 ];
 
 export default function TerminalAbout() {
